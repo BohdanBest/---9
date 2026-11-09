@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: lyuda-bielousova-music
+    env: python
+    buildCommand: "pip install -r requirements.txt && npm install --prefix frontend && npm run build --prefix frontend"
+    startCommand: "gunicorn app:app"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.2
+      - key: SECRET_KEY
+        generateValue: true
+
