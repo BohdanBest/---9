@@ -13,7 +13,7 @@ backend/uploads/*
 # Node & Frontend
 node_modules/
 frontend/node_modules/
-frontend/dist/
+# frontend/dist is included for instant reliable cloud serving
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
